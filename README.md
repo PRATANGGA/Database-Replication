@@ -308,13 +308,34 @@ Make sure **admin** and **maxscale_user** appear in the user list.
 
 Create a new database called **db_testing**.
 
+```bash
+CREATE DATABASE db_testing;
+```
+
+````bash
+SHOW DATABASES;
+```CREATE DATABASE db_testing;
+
 8. On **MariaDB-node2**, check if **users** and **database** are automatically synced.
+```bash
+mysql -u root -p
+````
 
 Run on **MariaDB-node2**:
 
-![](img/check.png)
+```bash
+select user,password,host from mysql.user;
+```
+
+![](img/check2.png)
 
 If the **admin** and **maxscale_user** accounts appear on **MariaDB-node2**, it means the synchronization process between the nodes in the Galera Cluster is working successfully.
+
+```bash
+SHOW DATABASES;
+```
+
+![](img/check3.png)
 
 If **users** and **db_testing** appear, replication works correctly.
 
@@ -326,9 +347,19 @@ MaxScale will act as a **load balancer** or **HA server**, allowing apps to acce
 
 1. Add **hostname configuration** to `/etc/hosts` on all nodes, including MaxScale
 
+```bash
+sudo nano /etc/hosts
+```
+
 Add the following lines:
 
+```conf
+192.168.56.21 node1
+192.168.56.22 node2
+```
+
 So it becomes
+![](img/etchosts.jpg)
 
 2. Run command to add Maxscale repository
 
