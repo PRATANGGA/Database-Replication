@@ -126,6 +126,7 @@ Remove test database and access to it? \[Y/n\] , answer y
 ![testdb](img/testdb.png)
 
 Reload privilege tables now? \[Y/n\] , answer y
+![reload](img/reload.png)
 
 At the end of the process, you will see a message like this:
 
