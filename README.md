@@ -478,11 +478,16 @@ Password : admin123
 ![](img/connectadmin.png)
 
 14. Run the Test Connection so that the results are as shown in the following image.
-    ![](img/consucces.png)
+
+![](img/consucces.png)
 
 15. If the connection is successful as shown above, click **OK**, then click **SAVE**, and finally click **Connect**. The **SQLYog dashboard** will appear, showing that you are connected to the MaxScale server at **192.168.56.20**.
 
+![](img/testdbmx.png)
+
 16. Let's try to create a database from sqlyog with the database name "SISTERˮ
+
+![](img/sister.png)
 
 17. The SISTER database that has been created will appear.
 
