@@ -153,6 +153,12 @@ So the /etc/hosts file should look file
 
 Test the connection using the ping command line from MariaDB-node1 to MariaDB-node2 and vice versa
 
+```bash
+ping node2
+```
+
+![ping](img/ping.png)
+
 2. Stop MariaDB Service, before configuring the Galera Cluster, stop the MariaDB service on both nodes
 
 Then check status to ensure it is inactive
