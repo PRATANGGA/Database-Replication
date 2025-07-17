@@ -312,7 +312,7 @@ Create a new database called **db_testing**.
 
 Run on **MariaDB-node2**:
 
-![][image9]
+![](img/check.png)
 
 If the **admin** and **maxscale_user** accounts appear on **MariaDB-node2**, it means the synchronization process between the nodes in the Galera Cluster is working successfully.
 
