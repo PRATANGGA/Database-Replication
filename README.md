@@ -123,6 +123,7 @@ Remove anonymous users? \[Y/n\]: Type y and press ENTER to remove anonymous user
 ![anonymoususer](img/anon.png)
 
 Remove test database and access to it? \[Y/n\] , answer y
+![testdb](img/testdb.png)
 
 Reload privilege tables now? \[Y/n\] , answer y
 
