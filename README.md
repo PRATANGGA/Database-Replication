@@ -215,7 +215,26 @@ wsrep_node_name="node1"
 
 Adjust related MariaDB service settings
 
+```bash
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+```
+
 do not delete anything, only modify specific parameters like cluster name, node address, and node name.
+
+```conf
+
+[mysqld] pid-file basedir
+bind-address max_connections general_log_file
+general_log
+
+= /run/mysqld/mysqld.pid
+= /usr
+= 0.0.0.0
+= 1000
+= /var/log/mysql/mysql.log
+= 1
+
+```
 
 You need to apply the same Galera cluster configuration and MariaDB service setup on **MariaDB-node2** just like you did on **MariaDB-node1**. However, it is important to pay close attention to certain configuration parameters in the **`60-galera.cnf`** file on **MariaDB-node2**. Specifically, you must modify the **`wsrep_node_address`** parameter so that it reflects the correct IP address of **MariaDB-node2**. Additionally, ensure that the **`wsrep_node_name`** parameter is set to **MariaDB-node2** to properly identify this node within the Galera cluster. These adjustments are crucial to ensure smooth synchronization and proper communication between cluster nodes.
 
