@@ -110,7 +110,7 @@ You will several prompts :
 Enter current password for root: Just press Enter since there’s no password set yet
 
 Switch to unix_socket authentication \[Y/n\] : Type n and press ENTER
-
+![unix_socket](img/unix_socket.png)
 Change the root password? \[Y/n\]: Type y, then set your desired password (e.g., 123 for simplicity).  
 ![][image6]
 
