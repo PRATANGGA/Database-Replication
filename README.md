@@ -187,6 +187,32 @@ sudo nano /etc/mysql/mariadb.conf.d/60-galera.cnf
 
 Clear the contents of **`/etc/mysql/mariadb.conf.d/60-galera.cnf`** (or back it up).
 
+```conf
+
+[galera] pid-file socket
+datadir
+
+= /var/run/mysqld/mysqld.pid
+= /var/run/mysqld/mysqld.sock
+= /var/lib/mysql
+
+binlog_format=ROW
+default-storage-engine=innodb innodb_autoinc_lock_mode=2 bind-address=0.0.0.0
+
+# Galera Provider Configuration wsrep_on=ON
+wsrep_provider=/usr/lib/galera/libgalera_smm.so
+
+# Galera Cluster Configuration wsrep_cluster_name="mariadb_cluster" # NAMA GROUP CLUSTER
+wsrep_cluster_address="gcomm://192.168.56.21,192.168.56.22 " # IP NODE
+
+# Galera Synchronization Configuration
+wsrep_sst_method=rsync
+
+# Galera Node Configuration wsrep_node_address="192.168.56.21" # IP SERVER MariaDB-node1
+wsrep_node_name="node1"
+
+```
+
 Adjust related MariaDB service settings
 
 do not delete anything, only modify specific parameters like cluster name, node address, and node name.
