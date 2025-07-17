@@ -120,6 +120,7 @@ Remove anonymous users? \[Y/n\]: Type y and press ENTER to remove anonymous user
 ![anonymoususer](img/anonymoususer.png)
 
 Remove anonymous users? \[Y/n\]: Type y and press ENTER to remove anonymous users.
+![anonymoususer](img/anon.png)
 
 Remove test database and access to it? \[Y/n\] , answer y
 
