@@ -181,6 +181,10 @@ sudo systemctl status mariadb
 
 3. Galera Cluster COnfiguration on MariaDB-node1
 
+```bash
+sudo nano /etc/mysql/mariadb.conf.d/60-galera.cnf
+```
+
 Clear the contents of **`/etc/mysql/mariadb.conf.d/60-galera.cnf`** (or back it up).
 
 Adjust related MariaDB service settings
