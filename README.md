@@ -264,6 +264,7 @@ sudo mysql -u root -p -e "show status like 'wsrep_cluster_size'"
 ```
 
 Finally, on **MariaDB-node1**, check the cluster status by running:
+
 ![value2](img/value2.png)
 
 7.  Create a new user for MaxScale and a user for application on **MariaDB-node1**.
@@ -271,8 +272,6 @@ Finally, on **MariaDB-node1**, check the cluster status by running:
 ```bash
 mysql -u root -p
 ```
-
-Run SQL commands to create users, then check with:
 
 ```bash
 CREATE USER 'maxscale_user'@'%' IDENTIFIED BY 'maxscale_password';
@@ -295,6 +294,12 @@ FLUSH PRIVILEGES;
 ```
 
 ![newuser](img/newuser.jpg)
+
+Run SQL commands to create users, then check with:
+
+```bash
+select user,password,host from mysql.user;
+```
 
 output :  
 ![][image8]
