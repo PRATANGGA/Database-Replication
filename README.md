@@ -129,6 +129,7 @@ Reload privilege tables now? \[Y/n\] , answer y
 ![reload](img/reload.png)
 
 At the end of the process, you will see a message like this:
+![mariadb](img/finalmariadb.png)
 
 # **Step 2 \- COnfiguring Galera Cluster**
 
