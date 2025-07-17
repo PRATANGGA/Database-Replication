@@ -149,6 +149,7 @@ Add the following lines at the button of the line
 ```
 
 So the /etc/hosts file should look file
+![etchosts](img/etchost.jpg)
 
 Test the connection using the ping command line from MariaDB-node1 to MariaDB-node2 and vice versa
 
