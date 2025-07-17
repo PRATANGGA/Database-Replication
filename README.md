@@ -451,7 +451,7 @@ make sure **OK** appears as follows
    User : devel
 
 Password : 123
-![](img/login.png)
+![](img/login.jpg)
 
 9.  Here's what the MaxScale UI dashboard looks like when you've successfully logged in.
 
