@@ -137,6 +137,10 @@ The following steps should be performed on **MariaDB-node1** and **MariaDB-node2
 
 1. COnfigure Hosts file on each node, edit the /etc/hosts file to set up hostname references, especially if you plan to use hostnames in the Galera in the Galera configuration instead of IP addresses
 
+```bash
+sudo vim /etc/hosts
+```
+
 Add the following lines at the button of the line
 
 So the /etc/hosts file should look file
