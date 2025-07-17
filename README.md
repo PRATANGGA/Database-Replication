@@ -240,6 +240,14 @@ You need to apply the same Galera cluster configuration and MariaDB service setu
 
 4. Starting Galera Cluster to initialize the Galera Cluster, **bootstrap the cluster** only from **MariaDB-node1** by running:
 
+```bash
+sudo galera_new_cluster
+```
+
+```bash
+mysql -u root -p -e "show status like 'wsrep_cluster_size'"
+```
+
 If no errors appear and the service runs successfully, it indicates that the Galera cluster is active.
 
 5. Next, start the MariaDB service on **MariaDB-node2** using:
