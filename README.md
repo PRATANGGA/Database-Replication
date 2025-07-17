@@ -159,6 +159,12 @@ ping node2
 
 ![ping](img/ping.png)
 
+```bash
+ping node1
+```
+
+![ping1](img/ping1.png)
+
 2. Stop MariaDB Service, before configuring the Galera Cluster, stop the MariaDB service on both nodes
 
 Then check status to ensure it is inactive
