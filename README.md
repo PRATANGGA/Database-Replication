@@ -117,6 +117,7 @@ Change the root password? \[Y/n\]: Type y, then set your desired password (e.g.,
 ![rootpass](img/rootpass.png)
 
 Remove anonymous users? \[Y/n\]: Type y and press ENTER to remove anonymous users.
+![anonymoususer](img/anonymoususer.png)
 
 Remove anonymous users? \[Y/n\]: Type y and press ENTER to remove anonymous users.
 
