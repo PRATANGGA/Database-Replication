@@ -143,6 +143,11 @@ sudo vim /etc/hosts
 
 Add the following lines at the button of the line
 
+```bash
+192.168.56.21 node1
+192.168.56.22 node2
+```
+
 So the /etc/hosts file should look file
 
 Test the connection using the ping command line from MariaDB-node1 to MariaDB-node2 and vice versa
