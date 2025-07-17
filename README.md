@@ -499,11 +499,17 @@ Password : admin123
 
 19. Login to mysql **MariaDB-node1**
 
-masukkan password root.
+```bash
+mysql -u root -p
+```
 
+Enter root password.
+![](img/enterrootpass.png)
 Run the command to view existing databases
 
 Make sure the SISTER database appears as below.
+
+![](img/final.png)
 
 20. Log in to MySQL MariaDB-node2 and repeat the database check as above. Make sure the SISTER database also appears.
 
