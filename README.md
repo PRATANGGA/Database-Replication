@@ -95,7 +95,7 @@ sudo systemctl status mariadb
 ```
 
 Checking MariaDB Service Status
-![topology](img/statusmariadb.png)
+![statusmariadb](img/statusmariadb.png)
 
 4. Securing MariaDB Service Status
 
@@ -106,7 +106,7 @@ sudo mysql_secure_installation
 MariaDB provides a script to improve security by setting the root password and adjusting security options
 
 You will several prompts :
-
+![mysqlsecureinstallation](img/mysqlsecureinstallation.png)
 Enter current password for root: Just press Enter since there’s no password set yet
 
 Switch to unix_socket authentication \[Y/n\] : Type n and press ENTER
