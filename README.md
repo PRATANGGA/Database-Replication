@@ -43,7 +43,7 @@ Before starting this lab, make sure you have prepared the following:
 
 # **Topology**
 
-![img/topology.jpg][image5]
+![topology](img/topology.jpg)
 
 **VM Preparation**
 
