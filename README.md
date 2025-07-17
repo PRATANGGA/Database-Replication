@@ -71,13 +71,31 @@ The following steps must be done on MariaDB-node1 VM and MariaDB-node2 VM.
 
 1. Downloading MariaDB Service
 
+```bash
+sudo apt install curl software-properties-common -y
+```
+
+```bash
+sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | \ sudo bash -s -- --mariadb-server-version=10.5 \
+--mariadb-maxscale-version=24.02
+```
+
 2. Installing MaraiDB Service
+
+```bash
+sudo apt install mariadb-server mariadb-client mariadb-backup galera-4 -y
+```
 
 3. Enabling MariaDB Service to ensure MariaDB starts automatically when the server boots up, use the following commands
 
-Checking MariaDB Service Status
+```bash
+sudo systemctl enable mariadb
+sudo systemctl start mariadb
+sudo systemctl status mariadb
+```
 
-4. Securing MariaDB Service Status
+Checking MariaDB Service Status
+![topology](img/statusmariadb.png) 4. Securing MariaDB Service Status
 
 MariaDB provides a script to improve security by setting the root password and adjusting security options
 
