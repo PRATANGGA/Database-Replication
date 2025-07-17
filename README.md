@@ -253,10 +253,17 @@ If no errors appear and the service runs successfully, it indicates that the Gal
 
 5. Next, start the MariaDB service on **MariaDB-node2** using:
 
+```bash
+sudo systemctl start mariadb
+```
+
 6. Finally, on **MariaDB-node1**, check the cluster status by running:
 
-Finally, on **MariaDB-node1**, check the cluster status by running:  
-![][image7]
+```bash
+sudo mysql -u root -p -e "show status like 'wsrep_cluster_size'"
+```
+
+Finally, on **MariaDB-node1**, check the cluster status by running:
 
 7. Create a new user for MaxScale and a user for application on **MariaDB-node1**.
 
