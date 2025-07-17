@@ -107,6 +107,7 @@ MariaDB provides a script to improve security by setting the root password and a
 
 You will several prompts :
 ![mysqlsecureinstallation](img/mysqlsecureinstallation.png)
+
 Enter current password for root: Just press Enter since there’s no password set yet
 
 Switch to unix_socket authentication \[Y/n\] : Type n and press ENTER
