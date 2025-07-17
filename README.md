@@ -430,13 +430,28 @@ The output is as follows
 
 6. Start the maxscale service by running the following command:
 
+```bash
+sudo systemctl enable maxscale
+```
+
+```bash
+sudo systemctl start maxscale
+```
+
 7. The next step is to create a maxscale user so that they can access the maxscale web interface.
 
-make sure **OK** appears as follows
+```bash
+sudo maxctrl create user "devel" "123" --type=admin
+```
 
-8. Maxscale web access: http://192.168.56.20:8989/ User : devel
+make sure **OK** appears as follows
+![](img/adduser.png)
+
+8. Maxscale web access: http://192.168.56.20:8989/
+   User : devel
 
 Password : 123
+![](img/login.png)
 
 9.  Here's what the MaxScale UI dashboard looks like when you've successfully logged in.
 
