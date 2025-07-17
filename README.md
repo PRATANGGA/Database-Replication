@@ -249,6 +249,7 @@ mysql -u root -p -e "show status like 'wsrep_cluster_size'"
 ```
 
 If no errors appear and the service runs successfully, it indicates that the Galera cluster is active.
+![value](img/value.jpg)
 
 5. Next, start the MariaDB service on **MariaDB-node2** using:
 
