@@ -489,9 +489,11 @@ Password : admin123
 
 ![](img/sister.png)
 
+![](img/createsister.png)
+
 17. The SISTER database that has been created will appear.
 
-    ![][image11]
+![](img/checksister.png)
 
 18. The SISTER database seen in SQLYog is actually the database on MariaDB-node1 and MariaDB-node2. To ensure the cluster is running successfully, simply log in to MySQL via the command line on MariaDB-node1 and MariaDB-node2.
 
