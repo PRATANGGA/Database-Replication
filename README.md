@@ -454,6 +454,7 @@ Password : 123
 ![](img/login.jpg)
 
 9.  Here's what the MaxScale UI dashboard looks like when you've successfully logged in.
+    ![](img/dashboard.jpg)
 
 10. Click the Visualization Menu to see the Cluster Configuration flow.
 
