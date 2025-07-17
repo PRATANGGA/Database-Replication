@@ -167,7 +167,17 @@ ping node1
 
 2. Stop MariaDB Service, before configuring the Galera Cluster, stop the MariaDB service on both nodes
 
+```bash
+sudo systemctl stop mariadb
+```
+
 Then check status to ensure it is inactive
+
+```bash
+sudo systemctl status mariadb
+```
+
+![mariadbcheck](img/statusmariadb2.png)
 
 3. Galera Cluster COnfiguration on MariaDB-node1
 
