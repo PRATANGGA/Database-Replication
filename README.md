@@ -41,7 +41,7 @@ Before starting this lab, make sure you have prepared the following:
 
    ![][image2] Network Adapter 2 \- Host-Only \- Static IP \- **192.168.56.22**/24
 
-# **Topologi**
+# **Topology**
 
 ![][image5]
 
