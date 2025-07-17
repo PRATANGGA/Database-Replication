@@ -359,19 +359,74 @@ Add the following lines:
 ```
 
 So it becomes
+
 ![](img/etchosts.jpg)
 
 2. Run command to add Maxscale repository
 
+```bash
+sudo apt install curl software-properties-common -y
+```
+
+```bash
+sudo curl -LsS https://r.mariadb.com/downloads/mariadb_repo_setup | \ sudo bash -s -- --mariadb-server-version=10.5 \
+--mariadb-maxscale-version=24.02
+```
+
 3. install maxscale service
+
+```bash
+sudo apt install maxscale mariadb-client	-y
+```
+
+```bash
+sudo nano /etc/maxscale.cnf
+```
 
 4. configure maxscale parameters
 
+```bash
+sudo mv /etc/maxscale.cnf /etc/maxscale.cnf.bck
+```
+
+```bash
+sudo nano /etc/maxscale.cnf
+```
+
 Enter the following Configuration
+
+```conf
+
+[maxscale] threads=auto admin_host=0.0.0.0 admin_port=8989
+admin_secure_gui=false
+
+[Galera-Monitor] type=monitor module=galeramon servers=node1,node2 user=maxscale_user password=maxscale_password monitor_interval=2s disable_master_failback=true
+available_when_donor=true
+
+[node1] type=server
+address=192.168.56.21 port=3306
+protocol=MariaDBBackend
+
+[node2] type=server
+address=192.168.56.22 port=3306
+protocol=MariaDBBackend
+
+[Galera-Service] type=service router=readconnroute router_options=synced servers=node1,node2 user=maxscale_user
+password=maxscale_password
+
+[Galera-Listener] type=listener service=Galera-Service protocol=MariaDBClient address=0.0.0.0
+port=3306
+
+```
 
 5. Verify the maxscale.cnf configuration file, make sure there are no errors and the message Configuration was successfully verified appears.
 
+```bash
+sudo maxscale -c -U maxscale
+```
+
 The output is as follows
+![](img/maxscale.png)
 
 6. Start the maxscale service by running the following command:
 
