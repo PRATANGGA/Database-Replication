@@ -294,6 +294,8 @@ GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';
 FLUSH PRIVILEGES;
 ```
 
+![newuser](img/newuser.jpg)
+
 output :  
 ![][image8]
 
