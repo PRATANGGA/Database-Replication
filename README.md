@@ -454,11 +454,16 @@ Password : 123
 ![](img/login.jpg)
 
 9.  Here's what the MaxScale UI dashboard looks like when you've successfully logged in.
-    ![](img/dashboard.jpg)
+
+![](img/dashboard.jpg)
 
 10. Click the Visualization Menu to see the Cluster Configuration flow.
 
-11.     Testing MySQL Connection via MaxScale ,Use **SQLYog** (Windows) or **Sequel Ace** (MacOS) to test MySQL connection through MaxScale.
+![](img/node.png)
+
+11. Testing MySQL Connection via MaxScale ,Use **SQLYog** (Windows) or **Sequel Ace** (MacOS) to test MySQL connection through MaxScale.
+
+![](img/connect.png)
 
 access using the following data, this access has been created in one of the steps above Host: 192.168.56.20  
 Port : 3306 User : admin  
@@ -466,11 +471,14 @@ Password : admin123
 
 12. Open SQLyog, click New, fill in the Name with test-maxscale. then OK
 
-    ![][image10]
+![](img/testcon.png)
 
 13. Enter the access data above as follows
 
+![](img/connectadmin.png)
+
 14. Run the Test Connection so that the results are as shown in the following image.
+    ![](img/consucces.png)
 
 15. If the connection is successful as shown above, click **OK**, then click **SAVE**, and finally click **Connect**. The **SQLYog dashboard** will appear, showing that you are connected to the MaxScale server at **192.168.56.20**.
 
